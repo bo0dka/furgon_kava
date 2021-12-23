@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" stylesheets="@../res/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="app-root" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="title" text="Програма &quot;Фургон кави&quot;" />
+            <Label text="Розробник:" />
+            <Label layoutX="279.0" layoutY="220.0" text="Костелей Богдан" />
+            <Label layoutX="279.0" layoutY="229.0" text="студент 2 курсу" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

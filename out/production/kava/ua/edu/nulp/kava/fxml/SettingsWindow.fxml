@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="380.0" prefWidth="400.0" stylesheets="@../res/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="app-root" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="title" text="Налаштування" />
+            <HBox spacing="10.0" styleClass="input-group">
+               <children>
+                  <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Хост" />
+                        <TextField fx:id="txtHost" text="localhost" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label text="Порт" />
+                        <TextField fx:id="txtPort" text="3306" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutX="20.0" layoutY="67.0" spacing="5.0" styleClass="input-group">
+               <children>
+                  <Label text="Ім'я користувача" />
+                  <TextField fx:id="txtUsername" text="root" />
+               </children>
+            </VBox>
+            <VBox layoutX="20.0" layoutY="135.0" spacing="5.0" styleClass="input-group">
+               <children>
+                  <Label text="Пароль" />
+                  <PasswordField fx:id="txtPassword" />
+               </children>
+            </VBox>
+            <VBox layoutX="20.0" layoutY="203.0" spacing="5.0" styleClass="input-group">
+               <children>
+                  <Label text="База даних" />
+                  <TextField fx:id="txtDbName" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#close" text="Скасувати" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="btnSave" disable="true" mnemonicParsing="false" onAction="#save" text="Зберегти" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="338.0" layoutY="10.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#testConnection" text="Перевірити" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

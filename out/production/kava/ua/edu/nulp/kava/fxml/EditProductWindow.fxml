@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="240.0" prefWidth="600.0" stylesheets="@../res/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="app-root" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="title" text="Дані продукту" />
+            <HBox spacing="10.0" styleClass="input-group">
+               <children>
+                  <VBox prefWidth="500.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Назва" />
+                        <TextField fx:id="txtName" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefWidth="500.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Тип" />
+                        <ComboBox fx:id="comboType" prefWidth="500.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="67.0" spacing="10.0" styleClass="input-group">
+               <children>
+                  <VBox prefWidth="500.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Ціна" />
+                        <TextField fx:id="txtPrice" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefWidth="500.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Об'єм" />
+                        <TextField fx:id="txtSize" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#save" text="Зберегти" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

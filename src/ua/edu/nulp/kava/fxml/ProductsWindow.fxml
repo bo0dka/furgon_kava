@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" stylesheets="@../res/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="app-root" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="title" text="Продукти" />
+            <TableView fx:id="tblProducts" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn id="colId" fx:id="colId" prefWidth="75.0" text="Код" />
+                <TableColumn id="colName" fx:id="colName" prefWidth="75.0" text="Назва" />
+                  <TableColumn id="colType" fx:id="colType" prefWidth="75.0" text="Тип" />
+                  <TableColumn id="colPrice" fx:id="colPrice" prefWidth="75.0" text="Ціна" />
+                  <TableColumn id="colSize" fx:id="colSize" prefWidth="75.0" text="Об'єм" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="btnEdit" disable="true" mnemonicParsing="false" onAction="#editSelected" text="Редагувати" />
+                        <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" onAction="#deleteSelected" text="Видалити" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addProduct" text="Додати" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
